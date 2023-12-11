@@ -1,30 +1,23 @@
-//
-//  ShareViewController.swift
-//  FlutterShare
-//
-//  Created by Alexandre Galambas on 07/12/2023.
-//
-
 import UIKit
-import Social
+import Flutter
 
-class ShareViewController: SLComposeServiceViewController {
+class ViewController: UIViewController {
+  override func viewDidLoad() {
+    super.viewDidLoad()
 
-    override func isContentValid() -> Bool {
-        // Do validation of contentText and/or NSExtensionContext attachments here
-        return true
-    }
+    // Make a button to call the showFlutter function when pressed.
+    let button = UIButton(type:UIButton.ButtonType.custom)
+    button.addTarget(self, action: #selector(showFlutter), for: .touchUpInside)
+    button.setTitle("Show Flutter!", for: UIControl.State.normal)
+    button.frame = CGRect(x: 80.0, y: 210.0, width: 160.0, height: 40.0)
+    button.backgroundColor = UIColor.blue
+    self.view.addSubview(button)
+  }
 
-    override func didSelectPost() {
-        // This is called after the user selects Post. Do the upload of contentText and/or NSExtensionContext attachments.
-    
-        // Inform the host that we're done, so it un-blocks its UI. Note: Alternatively you could call super's -didSelectPost, which will similarly complete the extension context.
-        self.extensionContext!.completeRequest(returningItems: [], completionHandler: nil)
-    }
-
-    override func configurationItems() -> [Any]! {
-        // To add configuration options via table cells at the bottom of the sheet, return an array of SLComposeSheetConfigurationItem here.
-        return []
-    }
-
+  @objc func showFlutter() {
+    let flutterEngine = (UIApplication.shared.delegate as! AppDelegate).flutterEngine
+    let flutterViewController =
+        FlutterViewController(engine: flutterEngine, nibName: nil, bundle: nil)
+    present(flutterViewController, animated: true, completion: nil)
+  }
 }

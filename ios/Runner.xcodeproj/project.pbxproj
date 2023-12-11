@@ -15,6 +15,7 @@
 		65F1761A2B21DCF9000830B6 /* FlutterShare.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 65F176102B21DCF9000830B6 /* FlutterShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		65F176242B21E374000830B6 /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F176232B21E374000830B6 /* Flutter.xcframework */; };
 		65F176252B21E374000830B6 /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 65F176232B21E374000830B6 /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65F1762A2B21E810000830B6 /* MyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F176292B21E810000830B6 /* MyApp.swift */; };
 		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
@@ -86,6 +87,7 @@
 		65F176202B21E1CA000830B6 /* Runner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Runner.entitlements; sourceTree = "<group>"; };
 		65F176212B21E1D1000830B6 /* FlutterShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlutterShare.entitlements; sourceTree = "<group>"; };
 		65F176232B21E374000830B6 /* Flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = ../../flutter/bin/cache/artifacts/engine/ios/extension_safe/Flutter.xcframework; sourceTree = "<group>"; };
+		65F176292B21E810000830B6 /* MyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApp.swift; sourceTree = "<group>"; };
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
 		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Flutter/Release.xcconfig; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				65F176122B21DCF9000830B6 /* ShareViewController.swift */,
 				65F176142B21DCF9000830B6 /* MainInterface.storyboard */,
 				65F176172B21DCF9000830B6 /* Info.plist */,
+				65F176292B21E810000830B6 /* MyApp.swift */,
 			);
 			path = FlutterShare;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65F176132B21DCF9000830B6 /* ShareViewController.swift in Sources */,
+				65F1762A2B21E810000830B6 /* MyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
