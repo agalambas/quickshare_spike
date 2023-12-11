@@ -8,7 +8,12 @@ class ShareViewController: UIViewController {
     }
 
     func showFlutter() {
-        let flutterViewController = FlutterViewController(project: nil, nibName: nil, bundle: nil)
+        let flutterViewController = FlutterViewController(
+            project: nil,
+            initialRoute: "/quickshare",
+            nibName: nil,
+            bundle: nil
+        )
         addChild(flutterViewController)
         view.addSubview(flutterViewController.view)
         flutterViewController.view.frame = view.bounds
