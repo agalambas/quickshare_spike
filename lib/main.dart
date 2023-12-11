@@ -7,9 +7,7 @@ void main() {
   // if inital route is quickshare, run a specific main function
   // to avoid initializing the other modules
   final initialRoute = WidgetsBinding.instance.platformDispatcher.defaultRouteName;
-  print(initialRoute);
   if (initialRoute == '/quickshare') return mainQuickshare();
-
   runApp(const MainApp());
 }
 

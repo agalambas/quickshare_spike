@@ -21,7 +21,6 @@ class Quickshare extends StatelessWidget {
   const Quickshare({super.key});
 
   void closeExtension() {
-    print('exit');
     exit(0);
   }
 
